@@ -100,7 +100,7 @@ public class TaskActivity extends AppCompatActivity {
         newTaskAdapter = new TaskAdapter(this, newTaskList,this);
         recyclerView.setAdapter(newTaskAdapter);
 
-        editor.putString("newTasks",toString(newTaskList.size()));
+        editor.putString("newTasks",newTaskList.size());
 
     }
 
@@ -110,6 +110,8 @@ public class TaskActivity extends AppCompatActivity {
 //        SQL for Completed
             completedTaskAdapter = new TaskAdapter(this, completedTaskList,this);
             recyclerView.setAdapter(completedTaskAdapter);
+
+        editor.putString("CompletedTasks",completedTaskList.size());
     }
 
     public void displayActiveTasks(){
@@ -117,6 +119,7 @@ public class TaskActivity extends AppCompatActivity {
         activeTaskList = taskDatabaseHelper.getTasksByStatus(1);
         activeTaskAdapater = new TaskAdapter(this,activeTaskList,this);
         recyclerView.setAdapter(activeTaskAdapater);
+        editor.putString("ActiveTasks",activeTaskList.size());
     }
 
     public void displayTotalTasks(){
@@ -126,6 +129,7 @@ public class TaskActivity extends AppCompatActivity {
         totalTaskList.addAll(taskDatabaseHelper.getTasksByStatus(2));
         totalTaskAdapter = new TaskAdapter(this,totalTaskList,this);
         recyclerView.setAdapter(totalTaskAdapter);
+        editor.putString("TotalTasks",totalTaskList.size());
     }
 
 }
