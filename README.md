@@ -14,7 +14,7 @@ A straightforward To-Do application built with Android Studio using Java and XML
 ## Installation
 
 One can utilize this application either through Android Studio or through APK.
-
+APK available in Release page : https://github.com/ujjwalr-y20cs161/Keka-To-Do-Application/releases/
 ### Prerequisites
 
 - Android Studio installed on your machine.
