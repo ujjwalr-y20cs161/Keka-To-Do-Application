@@ -86,7 +86,7 @@ git clone https://github.com/your-username/your-repo.git
 
 ## Release
 
-The latest release can be found in the [Release Page](https://github.com/your-username/your-repo/releases). Download the APK file and install it on your Android device.
+The latest release can be found in the [Release Page](https://github.com/ujjwalr-y20cs161/Keka-To-Do-Application/releases). Download the APK file and install it on your Android device.
 
 ## Contributing
 
